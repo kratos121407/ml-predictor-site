@@ -12,13 +12,13 @@ MODEL_PATH = os.path.join("models", "hiring_model.pkl")
 
 
 @st.cache_resource
-def load_bundle():
-    if os.path.exists(MODEL_PATH):
-        return joblib.load(MODEL_PATH)
+def load_bundle(path):
+    if os.path.exists(path):
+        return joblib.load(path)
     return None
 
 
-bundle = load_bundle()
+bundle = load_bundle(MODEL_PATH)
 
 st.markdown('<div class="card">', unsafe_allow_html=True)
 st.markdown("#### Candidate Profile")
