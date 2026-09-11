@@ -28,6 +28,15 @@ CUSTOM_CSS = """
         padding: 1.5rem;
         border: 1px solid #E4E4F0;
         margin-bottom: 1rem;
+        color: #1A1A2E;
+    }
+    .card h4 {
+        color: #1A1A2E;
+        margin-bottom: 0.5rem;
+    }
+    .card p {
+        color: #3A3A4A;
+        margin: 0;
     }
 
     .result-box {
